@@ -7,6 +7,6 @@ Atari's classic Breakout arcade game's basic implementation using OpenGL with Gt
 - [ ] Ball speed
 
 
-###References
+### References
 
 https://gtk.dashgl.com/?folder=Brickout
