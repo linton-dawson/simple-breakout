@@ -9,8 +9,8 @@ OBDEP= DashGL/dashgl.o
 
 .PHONY: DashGL/dashgl.h
 
-DashGL/dashgl.h: $(OBJ)
-	$(CC) -c -o $@ $^ $(CFLAGS)
+DashGL/dashgl.h: $(OBDEP)
+	$(CC) -c -o $@ $< $(CFLAGS)
 
 	$(CC) `pkg-config --cflags gtk+-3.0` $(MAIN) $(OBDEP) `pkg-config --libs gtk+-3.0` $(CFLAGS)
 
